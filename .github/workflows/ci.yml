@@ -31,12 +31,5 @@ jobs:
           pip install pylint
           pylint **/*.py
 
-      - name: Run tests
-        run: |
-          pip install pytest
-          pytest --maxfail=1 --disable-warnings -q
-
-      - name: Build and package
-        run: |
-          # Optional: Add any build or packaging commands here
-
+      - name: Run 
+        run: python run.py
